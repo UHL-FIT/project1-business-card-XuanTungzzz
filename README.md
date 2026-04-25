@@ -4,9 +4,8 @@
 ## Dự án 1: Danh thiếp (Bussiness card)
 - Commit code tại repo này
 
-- 
+
   package com.example.baitap17
-  
   import android.os.Bundle
   import androidx.activity.ComponentActivity
   import androidx.activity.compose.setContent
@@ -33,8 +32,7 @@
   import androidx.compose.ui.unit.dp
   import androidx.compose.ui.unit.sp
   import com.example.baitap17.ui.theme.Baitap17Theme
-  
-  
+
   class MainActivity : ComponentActivity() {
       override fun onCreate(savedInstanceState: Bundle?) {
           super.onCreate(savedInstanceState)
@@ -72,14 +70,12 @@
                       .background(Color(0xFF073042))
                       .padding(8.dp)
               )
-  
               Text(
                   text = "Nguyễn Xuân Tùng",
                   color = Color(0xFF000000),
                   fontSize = 30.sp,
                   modifier = Modifier.padding(top = 16.dp, bottom = 8.dp)
               )
-  
               Text(
                   text = "Sinh viên lớp CNTT CT1C",
                   color = Color(0xFF2E7D32),
@@ -87,7 +83,6 @@
                   fontSize = 24.sp
               )
           }
-  
           Column(
               modifier = Modifier
                   .fillMaxWidth()
@@ -115,7 +110,6 @@
               tint = Color(0xFF2E7D32),
               modifier = Modifier.size(24.dp)
           )
-  
           Text(
               text = text,
               color = Color(0xFF000000),
@@ -124,7 +118,6 @@
           )
       }
   }
-  
   @Preview(showBackground = true)
   @Composable
   fun DanhThiepPreview() {
